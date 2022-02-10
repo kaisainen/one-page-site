@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One page site</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
+    <nav class="nav-sticky">
+      <ul class="navi">
+        <li class="portfolio"><a href="./">Portfolio</a></li>
+        <li><a class="white" href="#anchor-past">Menneisyys</a></li>
+        <li><a class="white" href="#anchor-present">Nykyisyys</a></li>
+        <li><a class="white" href="#anchor-future">Tulevaisuus</a></li>
+        <li><a class="white" href="#anchor-contact">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <section class="contents">
+        <section class="portfolio-box">
+          <h1>Portfolio - Esimerkki</h1>
+          <p>Esittely osaamisestani</p>
+          <ol>
+            <li><a href="">Eka esimerkki</a></li>
+            <li><a href="">Toka esimerkki</a></li>
+            <li><a href="">Kolmas esimerkki</a></li>
+          </ol>
+        </section>
+      </section>
+      <section class="menneisyys">
+        <span id="anchor-past" class="anchor"></span>
+        <h1 id="past">Menneisyys</h1>
+        <section class="card-parent">
+          <div class="card">
+            <figure><img src="images/traffic.jpg" alt="traffic" /></figure>
+            <h2>Card title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid
+              ex ea commodi consequat. Quis aute iure reprehenderit...
+            </p>
+          </div>
+          <div class="card">
+            <figure><img src="images/traffic.jpg" alt="traffic" /></figure>
+            <h2>Card title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid
+              ex ea commodi consequat. Quis aute iure reprehenderit...
+            </p>
+          </div>
+          <div class="card">
+            <figure><img src="images/traffic.jpg" alt="traffic" /></figure>
+            <h2>Card title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid
+              ex ea commodi consequat. Quis aute iure reprehenderit...
+            </p>
+          </div>
+        </section>
+      </section>
+      <section class="nykyisyys">
+        <span id="anchor-present" class="anchor"></span>
+        <h1 id="present">Nykyisyys</h1>
+        <figure><img id="nykykuva" src="images/city3.jpg" alt="" /></figure>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+          tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+          ea commodi consequat. Quis aute iure reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
+          cupiditat non proident, sunt in culpa qui officia deserunt mollit anim
+          id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+          tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+          ea commodi consequat. Quis aute iure reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
+          cupiditat non proident, sunt in culpa qui officia deserunt mollit anim
+          id est laborum.
+        </p>
+      </section>
+      <section class="tulevaisuus">
+        <span id="anchor-future" class="anchor"></span>
+        <h1 class="border-line" id="future">Tulevaisuus</h1>
+        <figure><img id="futurekuva" src="images/city3.jpg" alt="" /></figure>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+          tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+          ea commodi consequat. Quis aute iure reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
+          cupiditat non proident, sunt in culpa qui officia deserunt mollit anim
+          id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+          tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+          ea commodi consequat. Quis aute iure reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
+          cupiditat non proident, sunt in culpa qui officia deserunt mollit anim
+          id est laborum.
+        </p>
+      </section>
+      <section class="contact">
+        <span id="anchor-contact" class="anchor"></span>
+        <h1 class="border-line" id="contact">Contact me</h1>
+        <div class="contact-container">
+          <label for="name">Etunimi Sukunimi</label>
+          <input type="text" id="name" name="name" placeholder="" />
+
+          <label for="email">Sähköposti</label>
+          <input type="text" id="email" name="email" placeholder="" />
+
+          <label for="feedback">Palautetta</label>
+          <input
+            type="text"
+            id="feedback"
+            name="feedback"
+            placeholder=""
+            style="height: 100px"
+          />
+
+          <div id="button-holder"><input type="submit" value="Lähetä" /></div>
+        </div>
+      </section>
+      <section class="gallery">
+        <figure class="eka">
+          <img
+            src="https://source.unsplash.com/1600x900/?train"
+            class="gallery__img"
+            alt=""
+          />
+        </figure>
+        <figure class="toka">
+          <img
+            src="https://source.unsplash.com/1600x900/?mountain"
+            class="gallery__img"
+            alt=""
+          />
+        </figure>
+        <figure class="kolmas">
+          <img
+            src="https://source.unsplash.com/1600x900/?summer"
+            class="gallery__img"
+            alt=""
+          />
+        </figure>
+        <figure class="neljas">
+          <img
+            src="https://source.unsplash.com/1600x900/?rose"
+            class="gallery__img"
+            alt=""
+          />
+        </figure>
+        <figure class="viides">
+          <img
+            src="https://source.unsplash.com/1600x900/?desert"
+            class="gallery__img"
+            alt=""
+          />
+        </figure>
+        <figure class="kuudes">
+          <img
+            src="https://source.unsplash.com/1600x900/?winter"
+            class="gallery__img"
+            alt=""
+          />
+        </figure>
+      </section>
+    </div>
+    <footer>
+      <p>2021 &copy; Kaisa Kuivalahti</p>
+    </footer>
+  </body>
+</html>

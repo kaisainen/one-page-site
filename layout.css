@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+figure {
+  display: block;
+}
+figure img {
+  max-width: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  background-color: #333333;
+  line-height: 2rem;
+  color: white;
+  max-width: 960px;
+  margin: auto;
+  /* padding-top: 80px; */
+}
+.nav-sticky {
+  background-color: black;
+  color: white;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  position: sticky;
+  top: 0;
+  display: block;
+  font-size: 1rem;
+  height: 50px;
+  z-index: 9999;
+}
+.navi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.navi > * {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.anchor {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  top: -80px;
+  left: 0;
+  visibility: hidden;
+}
+.portfolio a {
+  text-decoration: none;
+  color: white;
+}
+.white {
+  color: white;
+  text-decoration: none;
+}
+
+.contents {
+  color: cadetblue;
+  background-image: url(images/city.jpg);
+  padding: 2rem;
+}
+.portfolio-box {
+  background-color: rgba(51, 51, 51, 0.9);
+  margin: 2rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: orangered;
+}
+.portfolio-box ol {
+  list-style: decimal;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  color: burlywood;
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+}
+.portfolio-box a {
+  color: burlywood;
+  text-decoration: none;
+  font-style: italic;
+}
+.portfolio-box h1 {
+  color: orangered;
+  font-weight: 900;
+  padding-bottom: 2rem;
+}
+.menneisyys {
+  background-color: #f3f4f4;
+  padding: 2rem;
+  position: relative;
+}
+.card-parent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center space-evenly;
+}
+.card-parent > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 2rem;
+  margin: 1rem;
+  border: solid #333333 1px;
+  border-radius: 1rem;
+  color: black;
+  width: 70%;
+}
+.card h2 {
+  font-weight: 600;
+  font-size: 2.2rem;
+  padding: 1rem 0 1rem 0;
+}
+.menneisyys h1 {
+  color: black;
+  border: unset;
+  padding-bottom: 1rem;
+}
+h1 {
+  font-size: 2rem;
+  color: orangered;
+  padding: 2rem 0 2rem 0;
+  font-weight: 600;
+}
+.border-line {
+  border-top: solid cadetblue 0.1rem;
+  border-bottom: none;
+}
+.nykyisyys {
+  color: white;
+  padding: 2rem;
+  position: relative;
+}
+
+#nykykuva {
+  float: right;
+  width: 20rem;
+  margin: 0 0 0.5rem 1.5rem;
+}
+.nykyisyys:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tulevaisuus {
+  color: white;
+  padding: 2rem;
+  position: relative;
+}
+
+#futurekuva {
+  float: left;
+  width: 20rem;
+  margin: 0 1.5rem 0.5rem 0;
+}
+.tulevaisuus:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contact {
+  padding: 2rem;
+  position: relative;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: orangered;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+#button-holder {
+  text-align: center;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: rgb(201, 131, 106);
+}
+
+/* Add a background color and some padding around the form */
+.contact-container {
+  /* border-radius: 5px; */
+  /* background-color: #f2f2f2; */
+  /* padding: 2rem 5rem 2rem 5rem; */
+  max-width: 100%;
+  margin: auto;
+}
+footer {
+  border-top: solid white 1px;
+  border-bottom: none;
+  /* margin: 0 5rem; */
+  padding: 2rem 2rem 6rem 2rem;
+}
+/* kuva-albumi */
+html {
+  font-size: 62.5%;
+}
+.gallery {
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-gap: 0.5rem;
+}
+.gallery__img {
+  /* Setting the object fit value to cover is like setting the background size to cover for the background image. We are doing this so the image can fill the height and width of its box (the grid item), maintaining its aspect ratio. */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.eka {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.toka {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.kolmas {
+  grid-row: 1/3;
+  grid-column: 3/4;
+}
+.neljas {
+  grid-area: 2/1/3/3;
+}
+.viides {
+  grid-area: 3/1/4/3;
+}
+.kuudes {
+  grid-area: 3/3/4/4;
+}
+
+@media only screen and (min-width: 426px) {
+  body {
+    font-size: 1.4rem;
+  }
+  .portfolio {
+    flex-grow: 2;
+  }
+  .nav-sticky {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .card-parent {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card-parent > * {
+    width: 50%;
+  }
+  .portfolio-box {
+    padding: 4rem;
+  }
+  .contact-container {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .nav-sticky {
+    font-size: 1.8rem;
+  }
+
+  .card-parent {
+    flex-wrap: nowrap;
+  }
+  .portfolio-box {
+    font-size: 2.4rem;
+  }
+  .portfolio-box ol {
+    font-size: 2rem;
+  }
+  .contents {
+    padding: 5rem;
+  }
+}
